@@ -1,0 +1,28 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: blue;
+}
+        box{
+           margin: 0;
+            padding: 0;
+
+           }
+
+        #submit {
+            border:0; /* no black outline on button */
+            padding: 1rem; /* spacing between text & button border */
+            width: 60%;/* width of button */
+            background:coral; /* color of button */
+            text-transform: uppercase; /* uppercase */
+
+        }
+        p{
+          text-align:center;
+        }
+        h3{
+          text-align: center;
+        }
+

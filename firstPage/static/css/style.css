@@ -1,0 +1,109 @@
+/* #BA494B #E5CBC1 #F0E7DA #A6B4B3 #E3E4E0 color scheme */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            background: #E5CBC1;
+            text-align: center;
+            }
+        /*characteristics for form box class*/
+        .box{
+           width: 800px;
+           padding: 40px;
+           position:absolute;
+           top:80%;
+           left: 50%;
+           transform: translate(-50%,-50%);
+           background: #F0E7DA ;
+           text-align: center;
+           text-transform: uppercase;
+           }
+
+        .box h3{
+            color: #BA494B;
+            text-transform: uppercase;
+            font-weight: 500;
+        }
+
+        .box input[type = "text"]{
+            border: 0;
+            background: none;
+            display: block;
+            margin: 10px auto;
+            border: 2px solid #A6B4B3;
+            padding: 14px 10px;
+            width: 300px;
+            border-radius: 24px;
+            outline: none;
+            transition: 0.25s;
+        }
+        /*box changes color when hovered over*/
+        .box input[type = "text"]:hover{
+           width: 280px;
+           border-color: #BA494B;
+        }
+
+        .box input[type = "submit"]{
+           border-radius: 24px;
+           cursor: pointer;
+           font-weight: 800;
+        }
+
+        .box input[type = "submit"]:hover{
+           background: #BA494B ;
+        }
+
+        .btn { /*characteristics for submit button*/
+            border:0;
+            padding: 1rem;
+            width: 60%;
+            background:#E3E4E0;
+            text-transform: uppercase;
+            font-size: 20px;
+            font-family: sans-serif;
+        }
+
+        p{
+          text-align:center;
+          text-transform:uppercase;
+        }
+
+        h1{
+          position:absolute;
+          top:0px;
+        }
+
+        .title{
+        padding-top: 2px;
+        color: #ba494b;
+        font-size: 40px;
+        text-transform: uppercase;
+        }
+
+        h2{
+          position: absolute;
+          top: 10px;
+          left: 34%;
+          animation: type 3s steps(19);
+          overflow: hidden;
+          white-space: nowrap;
+          font-family: Consolas;
+          border-right: none;
+          width: 22ch;
+        }
+
+        result{
+            left:30%
+        }
+
+        @keyframes type { /*animation sequence for typing effect*/
+            0%{
+                width:0ch;
+                border-right: 3px solid black;
+            }
+            100%{
+                width:19ch;
+                border-right: 3px solid black;
+            }
+        }
+

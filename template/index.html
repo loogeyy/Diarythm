@@ -1,0 +1,44 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <link  rel="stylesheet"  href={% static "css/style.css"%}> <!-- links to css file-->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>Computer Science Score Prediction</title> <!--title-->
+</head>
+
+<!--body of the page-->
+<body>
+    <!--h1 biggest, h2 medium, h3 smaller-->
+    <h4 class = "title" >Computer Science Score Prediction</h4> <!--header-->
+    <br>
+    {{ a }}<!--Hello World!-->
+
+    <p>
+        Calculate your final test grade!
+    </p>
+
+    <br> <!--breaks/enters text-->
+        <form class = "box" method = "post" enctype = "multipart/form-data" action="predictGrade"> <!--action gives url-->
+
+<!--displays score if calculated or "enter details" if not-->
+        {% if scoreval %}
+            <h1>Your final computer science score is {{scoreval}}</h1> <!--takes calculated value from views.py and prints-->
+        {% else %}
+         <h2>Enter your details:</h2>
+        {% endif %}
+            {% csrf_token %} <!--prevents cross site forgery attacks during POST requests to Django-->
+    <div class="question"><label for="fname">Time Studied in Hours per Week:</label> </div> <input name="studyVal" id='fname' type="text" value={{temp.studytime}}><br><br>
+    <div class="question"><label for="lname">Number of Tests Failed:</label> </div> <input type="text" id="lname" name="failVal" value={{temp.failures}}><br><br>
+    <div class="question"><label for="fname">Amount of Free-time in Hours per Week:</label> </div> <input type="text" id="fname" name="freetimeVal" value={{temp.freetime}}><br><br>
+    <div class="question"><label for="lname">Number of Absences:</label> </div> <input type="text" id="lname" name="absentVal" value={{temp.absences}}><br><br>
+    <div class="question"><label for="fname">First Semester Grade:</label></div>  <input type="text" id="fname" name="firstVal" value={{temp.G1}}><br><br>
+    <div class="question"><label for="lname">Second Semester Grade:</label> </div> <input type="text" id="lname" name="secondVal" value={{temp.G2}}><br><br>
+    <br>
+    <input class="btn btn1" type="submit" value="Calculate!" id="submit"> </div>
+    </form>
+    <br>
+</body>

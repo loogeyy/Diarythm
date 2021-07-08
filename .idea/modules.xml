@@ -3,7 +3,11 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$USER_HOME$/PycharmProjects/Final/.idea/Final.iml" filepath="$USER_HOME$/PycharmProjects/Final/.idea/Final.iml" />
+      <module fileurl="file://$USER_HOME$/PycharmProjects/KMC/.idea/KMC.iml" filepath="$USER_HOME$/PycharmProjects/KMC/.idea/KMC.iml" />
+      <module fileurl="file://$USER_HOME$/PycharmProjects/KNNML/.idea/KNNML.iml" filepath="$USER_HOME$/PycharmProjects/KNNML/.idea/KNNML.iml" />
+      <module fileurl="file://$USER_HOME$/PycharmProjects/SVM/.idea/SVM.iml" filepath="$USER_HOME$/PycharmProjects/SVM/.idea/SVM.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/django_project.iml" filepath="$PROJECT_DIR$/.idea/django_project.iml" />
+      <module fileurl="file://$USER_HOME$/PycharmProjects/personalwebsite/.idea/personalwebsite.iml" filepath="$USER_HOME$/PycharmProjects/personalwebsite/.idea/personalwebsite.iml" />
     </modules>
   </component>
 </project>

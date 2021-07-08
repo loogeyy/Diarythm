@@ -17,6 +17,10 @@
     <orderEntry type="jdk" jdkName="Python 3.7 (tensor) (2)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="Final" />
+    <orderEntry type="module" module-name="KNNML" />
+    <orderEntry type="module" module-name="SVM" />
+    <orderEntry type="module" module-name="KMC" />
+    <orderEntry type="module" module-name="personalwebsite" />
   </component>
   <component name="TemplatesService">
     <option name="TEMPLATE_CONFIGURATION" value="Django" />

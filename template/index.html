@@ -31,6 +31,7 @@
          <h2>Enter your details:</h2>
         {% endif %}
             {% csrf_token %} <!--prevents cross site forgery attacks during POST requests to Django-->
+        <!-- name is for HTML responses, id & class is for JS/CSS, value is for passing HTML response -->
     <div class="question"><label for="fname">Time Studied in Hours per Week:</label> </div> <input name="studyVal" id='fname' type="text" value={{temp.studytime}}><br><br>
     <div class="question"><label for="lname">Number of Tests Failed:</label> </div> <input type="text" id="lname" name="failVal" value={{temp.failures}}><br><br>
     <div class="question"><label for="fname">Amount of Free-time in Hours per Week:</label> </div> <input type="text" id="fname" name="freetimeVal" value={{temp.freetime}}><br><br>

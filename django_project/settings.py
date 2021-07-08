@@ -25,7 +25,7 @@ SECRET_KEY = '*og$=+aaylxzt6$qh5h8=sz+0q=4d+@xfn=n1$h!n$m$p^lec*'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['computersciencefinal.herokuapp.com/']
+ALLOWED_HOSTS = []
 
 
 # Application definitSTATIC_ROOT=os.path.join(BASE_DIR,'static')ion
@@ -120,11 +120,4 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT=os.path.join(BASE_DIR,'static') #allows static website format
 
-if os.getcwd() == '/app':
-    import dj_database_url
-    db_from_env = dj_database_url.config(conn_max_age=500)
-    DATABASES['default'].update(db_from_env)
-    #Honor the 'X-forwarded-Proto' header for request.is_secure().
-    SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
